@@ -1,0 +1,108 @@
+2025-09-20 15:25:19.959 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 15:25:20.019 -03:00 [INF] Creating key {58dc22dc-453a-4db3-85ea-efe319883371} with creation date 2025-09-20 18:25:20Z, activation date 2025-09-20 18:25:20Z, and expiration date 2025-12-19 18:25:20Z.
+2025-09-20 15:25:20.023 -03:00 [WRN] No XML encryptor configured. Key {58dc22dc-453a-4db3-85ea-efe319883371} may be persisted to storage in unencrypted form.
+2025-09-20 15:25:20.024 -03:00 [INF] Writing data to file '/Users/rayanlima/.aspnet/DataProtection-Keys/key-58dc22dc-453a-4db3-85ea-efe319883371.xml'.
+2025-09-20 15:25:20.306 -03:00 [INF] Now listening on: https://localhost:7138
+2025-09-20 15:25:20.308 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-20 15:25:20.309 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 15:25:20.309 -03:00 [INF] Hosting environment: Development
+2025-09-20 15:25:20.310 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-20 15:25:34.233 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/ - null null
+2025-09-20 15:25:34.409 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/ - 404 0 null 175.5522ms
+2025-09-20 15:25:34.553 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7138/, Response status code: 404
+2025-09-20 15:25:39.458 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger - null null
+2025-09-20 15:25:39.462 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger - 301 0 null 4.2641ms
+2025-09-20 15:25:39.466 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger/index.html - null null
+2025-09-20 15:25:39.526 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger/index.html - 200 null text/html;charset=utf-8 60.2561ms
+2025-09-20 15:25:39.547 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger/swagger-ui.css - null null
+2025-09-20 15:25:39.547 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger/index.css - null null
+2025-09-20 15:25:39.548 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger/swagger-ui-bundle.js - null null
+2025-09-20 15:25:39.550 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-20 15:25:39.551 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger/index.js - null null
+2025-09-20 15:25:39.551 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger/index.js - 200 null application/javascript;charset=utf-8 0.7618ms
+2025-09-20 15:25:39.570 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger/index.css - 200 152 text/css 22.5296ms
+2025-09-20 15:25:39.578 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger/swagger-ui.css - 200 23647 text/css 30.6911ms
+2025-09-20 15:25:39.578 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger/swagger-ui-standalone-preset.js - 200 70860 text/javascript 27.9338ms
+2025-09-20 15:25:39.582 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger/swagger-ui-bundle.js - 200 417980 text/javascript 33.7121ms
+2025-09-20 15:25:39.750 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger/v1/swagger.json - null null
+2025-09-20 15:25:39.767 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-20 15:25:39.771 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger/favicon-32x32.png - null null
+2025-09-20 15:25:39.772 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger/favicon-32x32.png - 200 628 image/png 1.3436ms
+2025-09-20 15:25:39.840 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.9956ms
+2025-09-20 15:26:10.579 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7138/api/conta/login - application/json 66
+2025-09-20 15:26:10.586 -03:00 [INF] Executing endpoint 'HTTP: POST /api/conta/login'
+2025-09-20 15:26:10.863 -03:00 [INF] Setting HTTP status code 400.
+2025-09-20 15:26:10.867 -03:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-09-20 15:26:10.868 -03:00 [INF] Executed endpoint 'HTTP: POST /api/conta/login'
+2025-09-20 15:26:10.871 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7138/api/conta/login - 400 null application/json; charset=utf-8 291.323ms
+2025-09-20 15:27:28.804 -03:00 [INF] Application is shutting down...
+2025-09-20 15:30:14.331 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 15:30:14.718 -03:00 [INF] Now listening on: https://localhost:7138
+2025-09-20 15:30:14.719 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-20 15:30:14.720 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 15:30:14.720 -03:00 [INF] Hosting environment: Development
+2025-09-20 15:30:14.720 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-20 15:30:19.583 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/swagger/v1/swagger.json - null null
+2025-09-20 15:30:19.629 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-20 15:30:19.690 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.9708ms
+2025-09-20 15:30:37.375 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7138/api/conta/login - application/json 66
+2025-09-20 15:30:37.408 -03:00 [INF] Executing endpoint 'HTTP: POST /api/conta/login'
+2025-09-20 15:30:37.668 -03:00 [WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e'.
+2025-09-20 15:30:38.270 -03:00 [INF] Executed DbCommand (123ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[DataCriacao], [u].[Email], [u].[Nome], [u].[Password], [u].[Profile]
+FROM [Usuario] AS [u]
+WHERE [u].[Email] = @__email_0
+2025-09-20 15:30:38.563 -03:00 [INF] Setting HTTP status code 200.
+2025-09-20 15:30:38.563 -03:00 [INF] Writing value of type 'String' as Json.
+2025-09-20 15:30:38.565 -03:00 [INF] Executed endpoint 'HTTP: POST /api/conta/login'
+2025-09-20 15:30:38.571 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7138/api/conta/login - 200 null application/json; charset=utf-8 1196.434ms
+2025-09-20 15:31:07.677 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/usuario - null null
+2025-09-20 15:31:07.733 -03:00 [INF] Executing endpoint 'HTTP: GET /usuario/'
+2025-09-20 15:31:07.799 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[DataCriacao], [u].[Email], [u].[Nome], [u].[Password], [u].[Profile]
+FROM [Usuario] AS [u]
+2025-09-20 15:31:07.801 -03:00 [INF] Setting HTTP status code 200.
+2025-09-20 15:31:07.808 -03:00 [INF] Writing value of type 'ArraySelectIterator`2' as Json.
+2025-09-20 15:31:07.812 -03:00 [INF] Executed endpoint 'HTTP: GET /usuario/'
+2025-09-20 15:31:07.812 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/usuario - 200 null application/json; charset=utf-8 134.7976ms
+2025-09-20 16:18:40.898 -03:00 [INF] Application is shutting down...
+2025-09-20 16:58:41.193 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 16:58:41.583 -03:00 [INF] Now listening on: https://localhost:7138
+2025-09-20 16:58:41.583 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-20 16:58:41.584 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 16:58:41.585 -03:00 [INF] Hosting environment: Development
+2025-09-20 16:58:41.585 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-20 16:58:46.651 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/ - null null
+2025-09-20 16:58:46.761 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/ - 404 0 null 110.5327ms
+2025-09-20 16:58:46.768 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7138/, Response status code: 404
+2025-09-20 16:59:38.643 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7138/usuario - null null
+2025-09-20 16:59:38.714 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '20/09/2025 19:00:38', Current time (UTC): '20/09/2025 19:59:38'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-20 16:59:38.722 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '20/09/2025 19:00:38', Current time (UTC): '20/09/2025 19:59:38'.
+2025-09-20 16:59:38.724 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrador)
+2025-09-20 16:59:38.728 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 16:59:38.728 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7138/usuario - 401 0 null 85.0697ms
+2025-09-20 16:59:43.139 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7138/api/conta/login - application/json 66
+2025-09-20 16:59:43.147 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '20/09/2025 19:00:38', Current time (UTC): '20/09/2025 19:59:43'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-20 16:59:43.152 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '20/09/2025 19:00:38', Current time (UTC): '20/09/2025 19:59:43'.
+2025-09-20 16:59:43.154 -03:00 [INF] Executing endpoint 'HTTP: POST /api/conta/login'
+2025-09-20 16:59:43.440 -03:00 [WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e'.
+2025-09-20 16:59:43.962 -03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[DataCriacao], [u].[Email], [u].[Nome], [u].[Password], [u].[Profile]
+FROM [Usuario] AS [u]
+WHERE [u].[Email] = @__email_0
+2025-09-20 16:59:44.248 -03:00 [INF] Setting HTTP status code 200.
+2025-09-20 16:59:44.248 -03:00 [INF] Writing value of type 'String' as Json.
+2025-09-20 16:59:44.250 -03:00 [INF] Executed endpoint 'HTTP: POST /api/conta/login'
+2025-09-20 16:59:44.260 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7138/api/conta/login - 200 null application/json; charset=utf-8 1120.8075ms
+2025-09-20 17:00:30.553 -03:00 [INF] Application is shutting down...
