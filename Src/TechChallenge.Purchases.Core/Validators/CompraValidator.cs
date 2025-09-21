@@ -7,7 +7,7 @@ namespace TechChallenge.Purchases.Core.Validators
     {
         public CompraValidator()
         {
-            RuleFor(c => c.DataCriacao)
+            RuleFor(c => c.CreatedAt)
                 .NotEmpty();
 
             RuleFor(c => c.JogoId)

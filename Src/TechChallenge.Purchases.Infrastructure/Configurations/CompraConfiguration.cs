@@ -13,11 +13,11 @@ namespace TechChallenge.Purchases.Infrastructure.Configurations
             builder.Property(c => c.Id).HasColumnType("INT").UseIdentityColumn();
             builder.Property(c => c.CompradorId).HasColumnType("INT").IsRequired();
             builder.Property(c => c.JogoId).HasColumnType("INT").IsRequired();
-            builder.Property(c => c.DataCriacao).HasColumnType("DATETIME").IsRequired();
+            builder.Property(c => c.CreatedAt).HasColumnType("DATETIME").IsRequired();
             builder.Property(c => c.Valor).HasColumnType("DECIMAL(4,2)").IsRequired();
             builder.Property(c => c.Desconto).HasColumnType("INT").IsRequired();
             builder.Property(c => c.Total).HasColumnType("DECIMAL(4,2)").IsRequired();
-            builder.HasIndex(c => new { c.CompradorId, c.JogoId }).IsUnique();
+            builder.Property(c => c.PaymentMethodType).HasColumnType("INT").IsRequired();
         }
     }
 }

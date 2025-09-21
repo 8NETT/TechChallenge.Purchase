@@ -3,7 +3,6 @@ using Microsoft.Extensions.Logging;
 using TechChallenge.Purchases.Application.Contracts;
 using TechChallenge.Purchases.Application.DTOs;
 using TechChallenge.Purchases.Application.Mappers;
-using TechChallenge.Purchases.Application.Record;
 using TechChallenge.Purchases.Application.Validation;
 using TechChallenge.Purchases.Core.Auth;
 using TechChallenge.Purchases.Core.Entity;
@@ -20,56 +19,52 @@ namespace TechChallenge.Purchases.Application.Services
         IEventHubClient _events,
         ILogger<CompraService> _log) : ICompraService
     {
-        public async Task<Result<int>> ComprarAsync(CompraInput input)
+        public async Task<Result<int>> ComprarAsync(CompraDTO dto)
         {
             try
             {
                 var userId = _userContext.GetUserId();
                 
-                var desconto = Math.Clamp(input.Desconto, 0, 100);
-                var total = Math.Round(input.Valor * (100 - desconto) / 100m, 2);
-
-                var pm = input.Payment;
+                var desconto = Math.Clamp(dto.Desconto, 0, 100);
+                var total = Math.Round(dto.Valor * (100 - desconto) / 100m, 2);
                 
-                if (input.PaymentMethod is EPaymentMethodType.Credit or EPaymentMethodType.Debit)
+                dto.UsuarioId = userId;
+                dto.Desconto = desconto;
+                dto.Total = total;
+                
+                var pm = dto.PaymentMethod;
+                
+                if (dto.PaymentMethodType is EPaymentMethodType.Credit or EPaymentMethodType.Debit)
                     if (pm != null)
-                        CreditCardValidator.Validate(pm, input.PaymentMethod);
+                        CreditCardValidator.Validate(pm, dto.PaymentMethodType);
 
-                var compra = new Compra
-                {
-                    CompradorId = userId,
-                    JogoId = input.JogoId,
-                    Valor = input.Valor,
-                    Desconto = desconto,
-                    Total = total,
-                    PaymentMethodType = input.PaymentMethod
-                };
+                var compra = dto.ToEntity();
 
-                var compraId = _repo.CompraRepository.Cadastrar(compra);
-
-                // Eventos: CompraCriada (para usuários/jogos) + OrderPlaced (para pagamentos)
+                _repo.CompraRepository.Cadastrar(compra);
+                await _repo.CommitAsync();
+                
                 var createdEvt = new CompraCriadaEvent(
-                    CompraId: compraId,
+                    CompraId: compra.Id,
                     UserId: userId,
-                    JogoId: input.JogoId,
-                    Valor: input.Valor,
+                    JogoId: dto.JogoId,
+                    Valor: dto.Valor,
                     Desconto: desconto,
                     Total: total,
-                    PaymentMethodType: input.PaymentMethod,
+                    PaymentMethodType: dto.PaymentMethodType,
                     OccurredAtUtc: DateTime.UtcNow);
 
                 var orderEvt = new OrderPlacedEvent(
-                    OrderId: compraId,
+                    OrderId: compra.Id,
                     UserId: userId,
-                    JogoId: input.JogoId,
-                    UnitPrice: input.Valor,
+                    JogoId: dto.JogoId,
+                    UnitPrice: dto.Valor,
                     Total: total,
                     OccurredAtUtc: DateTime.UtcNow);
 
                 await _events.PublishAsync("CompraCriada", createdEvt);
                 await _events.PublishAsync("OrderPlaced", orderEvt);
 
-                return Result.Success(compraId);
+                return Result.Success(compra.Id);
             }
             catch (UnauthorizedAccessException)
             {

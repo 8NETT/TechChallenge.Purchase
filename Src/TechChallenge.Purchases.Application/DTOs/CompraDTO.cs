@@ -4,12 +4,12 @@ namespace TechChallenge.Purchases.Application.DTOs
 {
     public class CompraDTO
     {
-        public required int Id { get; set; }
-        public required int UsuarioId { get; set; }
+        public int Id { get; set; }
+        public int UsuarioId { get; set; }
         public required int JogoId { get; set; }
         public required decimal Valor { get; set; }
         public required int Desconto { get; set; }
-        public required decimal Total { get; set; }
+        public decimal Total { get; set; }
         
         public EPaymentMethodType PaymentMethodType { get; set; }
 

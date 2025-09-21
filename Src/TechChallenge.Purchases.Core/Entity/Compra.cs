@@ -9,7 +9,7 @@ namespace TechChallenge.Purchases.Core.Entity
         public int JogoId { get; set; }
         public decimal Valor { get; set; }
         public int Desconto { get; set; }
-        public decimal Total { get; set; }
+        public decimal? Total { get; set; }
         public EPaymentMethodType PaymentMethodType { get; set; }
         public bool Estornada { get; set; }
         

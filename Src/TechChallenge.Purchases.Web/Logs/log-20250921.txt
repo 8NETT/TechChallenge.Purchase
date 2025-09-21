@@ -43,3 +43,464 @@
 DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2025-09-21 15:02:09.492 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
 2025-09-21 15:02:09.492 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 401 0 null 45.7697ms
+2025-09-21 19:08:51.502 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2025-09-21 19:08:51.816 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-21 19:08:52.206 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 715.1707ms
+2025-09-21 19:11:58.713 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 246
+2025-09-21 19:11:59.020 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:12:36.835 -03:00 [WRN] Falha de validação ao criar compra
+System.ArgumentException: Cartão expirado.
+   at TechChallenge.Purchases.Application.Validation.CreditCardValidator.Validate(PaymentMethodDTO pm, EPaymentMethodType pmType) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Validation/CreditCardValidator.cs:line 31
+   at TechChallenge.Purchases.Application.Services.CompraService.ComprarAsync(CompraInput input) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Services/CompraService.cs:line 36
+2025-09-21 19:12:36.864 -03:00 [INF] Setting HTTP status code 400.
+2025-09-21 19:12:36.884 -03:00 [INF] Writing value of type 'List`1' as Json.
+2025-09-21 19:12:36.948 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:12:36.957 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 400 null application/json; charset=utf-8 38245.4405ms
+2025-09-21 19:12:56.778 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 246
+2025-09-21 19:12:56.805 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:14:19.460 -03:00 [WRN] Falha de validação ao criar compra
+System.ArgumentException: Cartão expirado.
+   at TechChallenge.Purchases.Application.Validation.CreditCardValidator.Validate(PaymentMethodDTO pm, EPaymentMethodType pmType) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Validation/CreditCardValidator.cs:line 31
+   at TechChallenge.Purchases.Application.Services.CompraService.ComprarAsync(CompraInput input) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Services/CompraService.cs:line 36
+2025-09-21 19:14:19.469 -03:00 [INF] Setting HTTP status code 400.
+2025-09-21 19:14:19.471 -03:00 [INF] Writing value of type 'List`1' as Json.
+2025-09-21 19:14:19.507 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:14:19.508 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 400 null application/json; charset=utf-8 82730.9137ms
+2025-09-21 19:14:25.399 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 248
+2025-09-21 19:14:25.404 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:14:39.595 -03:00 [WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e'.
+2025-09-21 19:14:39.766 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 19:14:39.767 -03:00 [WRN] No store type was specified for the decimal property 'Valor' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 19:16:54.559 -03:00 [INF] Setting HTTP status code 200.
+2025-09-21 19:16:54.644 -03:00 [INF] Writing value of type '<>f__AnonymousType1`1' as Json.
+2025-09-21 19:16:54.708 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:16:54.958 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 200 null application/json; charset=utf-8 149560.3026ms
+2025-09-21 19:18:47.249 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 248
+2025-09-21 19:18:47.292 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:19:02.017 -03:00 [INF] Setting HTTP status code 200.
+2025-09-21 19:19:02.018 -03:00 [INF] Writing value of type '<>f__AnonymousType1`1' as Json.
+2025-09-21 19:19:02.025 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:19:02.026 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 200 null application/json; charset=utf-8 14777.3857ms
+2025-09-21 19:21:23.488 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 248
+2025-09-21 19:21:23.500 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:28:03.162 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 19:28:03.474 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 19:28:03.475 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 19:28:03.475 -03:00 [INF] Hosting environment: Development
+2025-09-21 19:28:03.476 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 19:44:04.235 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 19:44:04.569 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 19:44:04.570 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 19:44:04.570 -03:00 [INF] Hosting environment: Development
+2025-09-21 19:44:04.570 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 19:44:52.096 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2025-09-21 19:44:52.174 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-21 19:44:52.260 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.6907ms
+2025-09-21 19:45:19.503 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 277
+2025-09-21 19:45:19.527 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 19:45:19.597 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-21 19:45:19.599 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-21 19:45:19.599 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 401 0 null 97.3162ms
+2025-09-21 19:45:43.267 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 277
+2025-09-21 19:45:43.359 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:45:43.376 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:45:43.485 -03:00 [ERR] Unhandled exception for request POST /api/compra
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CompraDTO dto" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to TechChallenge.Purchases.Application.DTOs.PaymentMethodDTO. Path: $.paymentMethod | LineNumber: 6 | BytePositionInLine: 20.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TechChallenge.Purchases.Web.Middleware.ErroMiddleware.InvokeAsync(HttpContext context) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web/Middleware/ErroMiddleware.cs:line 20
+2025-09-21 19:45:43.525 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 500 null application/json 258.4127ms
+2025-09-21 19:47:03.064 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 19:47:03.412 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 19:47:03.413 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 19:47:03.414 -03:00 [INF] Hosting environment: Development
+2025-09-21 19:47:03.414 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 19:47:45.740 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 277
+2025-09-21 19:47:45.790 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 19:47:45.904 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:47:45.924 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:47:46.014 -03:00 [ERR] Unhandled exception for request POST /api/compra
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CompraDTO dto" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to TechChallenge.Purchases.Application.DTOs.PaymentMethodDTO. Path: $.paymentMethod | LineNumber: 6 | BytePositionInLine: 20.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TechChallenge.Purchases.Web.Middleware.ErroMiddleware.InvokeAsync(HttpContext context) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web/Middleware/ErroMiddleware.cs:line 20
+2025-09-21 19:47:46.042 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 500 null application/json 302.6618ms
+2025-09-21 19:48:09.394 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 19:48:09.475 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:48:09.482 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:48:09.498 -03:00 [ERR] Unhandled exception for request POST /api/compra
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CompraDTO dto" from the request body as JSON.
+ ---> System.Text.Json.JsonException: JSON deserialization for type 'TechChallenge.Purchases.Application.DTOs.CompraDTO' was missing required properties including: 'total'.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_JsonRequiredPropertyMissing(JsonTypeInfo parent, BitArray requiredPropertiesSet)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TechChallenge.Purchases.Web.Middleware.ErroMiddleware.InvokeAsync(HttpContext context) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web/Middleware/ErroMiddleware.cs:line 20
+2025-09-21 19:48:09.500 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 500 null application/json 107.5478ms
+2025-09-21 19:48:51.233 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 19:48:51.564 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 19:48:51.565 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 19:48:51.565 -03:00 [INF] Hosting environment: Development
+2025-09-21 19:48:51.565 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 19:49:15.747 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 19:49:15.819 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 19:49:15.956 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:49:48.283 -03:00 [ERR] Erro ao criar compra
+TechChallenge.Purchases.Core.Exceptions.EstadoInvalidoException: Não é possível criar uma compra em um estado inválido.
+   at TechChallenge.Purchases.Core.Builders.CompraBuilder.Build() in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Core/Builders/CompraBuilder.cs:line 32
+   at TechChallenge.Purchases.Application.Mappers.CompraMapper.ToEntity(CompraDTO dto) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Mappers/CompraMapper.cs:line 19
+   at TechChallenge.Purchases.Application.Services.CompraService.ComprarAsync(CompraDTO dto) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Services/CompraService.cs:line 37
+2025-09-21 19:49:48.295 -03:00 [INF] Setting HTTP status code 400.
+2025-09-21 19:49:48.309 -03:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-09-21 19:49:48.339 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:49:48.347 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 400 null application/json; charset=utf-8 32601.5631ms
+2025-09-21 19:49:52.825 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 19:49:52.965 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:50:27.930 -03:00 [ERR] Erro ao criar compra
+TechChallenge.Purchases.Core.Exceptions.EstadoInvalidoException: Não é possível criar uma compra em um estado inválido.
+   at TechChallenge.Purchases.Core.Builders.CompraBuilder.Build() in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Core/Builders/CompraBuilder.cs:line 32
+   at TechChallenge.Purchases.Application.Mappers.CompraMapper.ToEntity(CompraDTO dto) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Mappers/CompraMapper.cs:line 19
+   at TechChallenge.Purchases.Application.Services.CompraService.ComprarAsync(CompraDTO dto) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Services/CompraService.cs:line 37
+2025-09-21 19:50:27.960 -03:00 [INF] Setting HTTP status code 400.
+2025-09-21 19:50:27.960 -03:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-09-21 19:50:27.966 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:50:27.966 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 400 null application/json; charset=utf-8 35141.3665ms
+2025-09-21 19:50:31.334 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 19:50:31.344 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:53:17.055 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 19:53:17.386 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 19:53:17.387 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 19:53:17.387 -03:00 [INF] Hosting environment: Development
+2025-09-21 19:53:17.387 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 19:53:26.905 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 19:53:26.987 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 19:53:27.145 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:53:35.692 -03:00 [ERR] Erro ao criar compra
+TechChallenge.Purchases.Core.Exceptions.EstadoInvalidoException: Não é possível criar uma compra em um estado inválido.
+   at TechChallenge.Purchases.Core.Builders.CompraBuilder.Build() in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Core/Builders/CompraBuilder.cs:line 32
+   at TechChallenge.Purchases.Application.Mappers.CompraMapper.ToEntity(CompraDTO dto) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Mappers/CompraMapper.cs:line 19
+   at TechChallenge.Purchases.Application.Services.CompraService.ComprarAsync(CompraDTO dto) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Services/CompraService.cs:line 37
+2025-09-21 19:53:46.273 -03:00 [INF] Setting HTTP status code 400.
+2025-09-21 19:53:46.290 -03:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-09-21 19:53:46.295 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:53:46.305 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 400 null application/json; charset=utf-8 19400.6209ms
+2025-09-21 19:54:15.261 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 19:54:15.379 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:55:47.604 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 19:55:47.932 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 19:55:47.933 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 19:55:47.933 -03:00 [INF] Hosting environment: Development
+2025-09-21 19:55:47.933 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 19:55:55.268 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 19:55:55.326 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 19:55:55.439 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 19:56:15.707 -03:00 [WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e'.
+2025-09-21 19:56:15.810 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 19:56:15.811 -03:00 [WRN] No store type was specified for the decimal property 'Valor' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 19:56:18.216 -03:00 [ERR] Failed executing DbCommand (330ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Usuario] ([Id], [CompradorId], [CreatedAt], [DataCriacao], [Desconto], [Estornada], [JogoId], [PaymentMethodType], [Total], [Valor])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-09-21 19:56:18.296 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'TechChallenge.Purchases.Infrastructure.Repository.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Usuario'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e1644eee-fc46-4f6f-b251-efa0114daa67
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Usuario'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e1644eee-fc46-4f6f-b251-efa0114daa67
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-21 20:00:37.192 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 20:00:37.527 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 20:00:37.528 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 20:00:37.528 -03:00 [INF] Hosting environment: Development
+2025-09-21 20:00:37.528 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 20:00:43.582 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 20:00:43.644 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 20:00:43.766 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 20:00:52.412 -03:00 [WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e'.
+2025-09-21 20:00:52.515 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 20:00:52.516 -03:00 [WRN] No store type was specified for the decimal property 'Valor' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 20:00:53.785 -03:00 [ERR] Failed executing DbCommand (103ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Compra] ([Id], [CompradorId], [CreatedAt], [DataCriacao], [Desconto], [Estornada], [JogoId], [PaymentMethodType], [Total], [Valor])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-09-21 20:00:53.818 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'TechChallenge.Purchases.Infrastructure.Repository.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DataCriacao'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e362307e-a3f6-4417-b3d7-f5f7b366548a
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DataCriacao'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e362307e-a3f6-4417-b3d7-f5f7b366548a
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-21 20:02:33.427 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 20:02:33.771 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 20:02:33.772 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 20:02:33.772 -03:00 [INF] Hosting environment: Development
+2025-09-21 20:02:33.772 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 20:02:53.837 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 20:02:53.889 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 20:02:54.018 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 20:03:00.664 -03:00 [WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e'.
+2025-09-21 20:03:00.767 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 20:03:00.768 -03:00 [WRN] No store type was specified for the decimal property 'Valor' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 20:03:02.528 -03:00 [ERR] Failed executing DbCommand (702ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Compra] ([Id], [CompradorId], [CreatedAt], [Desconto], [Estornada], [JogoId], [PaymentMethodType], [Total], [Valor])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-09-21 20:03:02.572 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'TechChallenge.Purchases.Infrastructure.Repository.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Compra' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c322c63e-d0ed-42c3-9952-cf7cf7185fbb
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Compra' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c322c63e-d0ed-42c3-9952-cf7cf7185fbb
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-21 20:03:19.530 -03:00 [ERR] Erro ao criar compra
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Compra' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c322c63e-d0ed-42c3-9952-cf7cf7185fbb
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechChallenge.Purchases.Infrastructure.Repository.UnitOfWork.CommitAsync() in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Infrastructure/Repository/UnitOfWork.cs:line 19
+   at TechChallenge.Purchases.Application.Services.CompraService.ComprarAsync(CompraDTO dto) in /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Application/Services/CompraService.cs:line 44
+2025-09-21 20:03:19.550 -03:00 [INF] Setting HTTP status code 400.
+2025-09-21 20:03:19.565 -03:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-09-21 20:03:19.577 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 20:03:19.594 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 400 null application/json; charset=utf-8 25756.575ms
+2025-09-21 20:03:23.517 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 20:03:23.531 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 20:06:03.300 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 20:06:03.592 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 20:06:03.593 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 20:06:03.593 -03:00 [INF] Hosting environment: Development
+2025-09-21 20:06:03.593 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 20:06:14.843 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 287
+2025-09-21 20:06:14.900 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 20:06:15.016 -03:00 [INF] Executing endpoint 'HTTP: POST /api/compra/'
+2025-09-21 20:06:22.172 -03:00 [WRN] No instantiatable types implementing `IEntityTypeConfiguration` were found while while scanning assembly 'System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e'.
+2025-09-21 20:06:22.271 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 20:06:22.272 -03:00 [WRN] No store type was specified for the decimal property 'Valor' on entity type 'Compra'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-09-21 20:06:24.387 -03:00 [INF] Executed DbCommand (571ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Compra] ([CompradorId], [CreatedAt], [Desconto], [Estornada], [JogoId], [PaymentMethodType], [Total], [Valor])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-09-21 20:06:47.553 -03:00 [INF] Setting HTTP status code 200.
+2025-09-21 20:06:47.558 -03:00 [INF] Writing value of type '<>f__AnonymousType1`1' as Json.
+2025-09-21 20:06:47.570 -03:00 [INF] Executed endpoint 'HTTP: POST /api/compra/'
+2025-09-21 20:06:47.597 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 200 null application/json; charset=utf-8 32752.5201ms

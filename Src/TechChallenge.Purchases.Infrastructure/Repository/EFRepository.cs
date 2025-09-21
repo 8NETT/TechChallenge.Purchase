@@ -21,12 +21,8 @@ public class EFRepository<T> : IRepository<T> where T : EntityBase
     public async Task<T?> ObterPorIdAsync(int id) =>
         await _dbSet.FirstOrDefaultAsync(e => e.Id == id);
 
-    public int Cadastrar(T entidade)
-    {
-        var incluido = _dbSet.Add(entidade);
-        
-        return incluido.Entity.Id;
-    }
+    public void Cadastrar(T entidade) =>
+        _dbSet.Add(entidade);
 
     public void Alterar(T entidade) =>
         _dbSet.Update(entidade);

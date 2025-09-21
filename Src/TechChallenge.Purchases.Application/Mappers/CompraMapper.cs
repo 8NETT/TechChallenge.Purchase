@@ -12,7 +12,19 @@ namespace TechChallenge.Purchases.Application.Mappers
             JogoId = entidade.JogoId,
             Valor = entidade.Valor,
             Desconto = entidade.Desconto,
-            Total = entidade.Total
+            Total = entidade.Total ?? 0,
+            PaymentMethodType = entidade.PaymentMethodType
         };
+        
+        public static Compra ToEntity(this CompraDTO dto) => Compra.New()
+            .Id(dto.Id)
+            .CompradorId(dto.UsuarioId)
+            .CreatedAt(DateTime.Now)
+            .PaymentMethodType(dto.PaymentMethodType)
+            .JogoId(dto.JogoId)
+            .Valor(dto.Valor)
+            .Desconto(dto.Desconto)
+            .Total(dto.Total)
+            .Build();
     }
 }

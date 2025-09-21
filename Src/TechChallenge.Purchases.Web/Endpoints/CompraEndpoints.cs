@@ -1,8 +1,7 @@
 using System.Net;
 using Ardalis.Result;
 using TechChallenge.Purchases.Application.Contracts;
-using TechChallenge.Purchases.Application.Record;
-using TechChallenge.Purchases.Web.Security;
+using TechChallenge.Purchases.Application.DTOs;
 
 namespace TechChallenge.Purchases.Web.Endpoints;
 
@@ -14,9 +13,9 @@ public static class CompraEndpoints
             .RequireAuthorization(); 
         
         // POST: /api/compra
-        compra.MapPost("/", async (CompraInput input, ICompraService service) =>
+        compra.MapPost("/", async (CompraDTO dto, ICompraService service) =>
             {
-                var result = await service.ComprarAsync(input);
+                var result = await service.ComprarAsync(dto);
 
                 if (result.IsInvalid()) return Results.BadRequest(result.ValidationErrors);
                 if (result.IsConflict()) return Results.Conflict(result.Errors);
