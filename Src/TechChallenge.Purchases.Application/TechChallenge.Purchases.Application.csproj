@@ -9,11 +9,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TechChallenge.Purchases.Core\TechChallenge.Purchases.Core.csproj" />
+    <ProjectReference Include="..\TechChallenge.Purchases.Infrastructure\TechChallenge.Purchases.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Ardalis.Result" Version="10.1.0" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.9" />
   </ItemGroup>
 
 </Project>

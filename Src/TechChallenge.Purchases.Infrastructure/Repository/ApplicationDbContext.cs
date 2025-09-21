@@ -16,7 +16,7 @@ public class ApplicationDbContext : DbContext
         _connectionString = connectionString;
     }
     
-    public DbSet<Usuario> Usuario { get; }
+    public DbSet<Compra> Usuario { get; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

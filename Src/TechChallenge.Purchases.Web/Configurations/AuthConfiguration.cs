@@ -13,8 +13,7 @@ namespace TechChallenge.Purchases.Web.Configurations
                 ?? throw new InvalidOperationException("Chave JWT não localizada na configuração.");
             var issuer = builder.Configuration["Jwt:Issuer"]
                 ?? throw new InvalidOperationException("Issuer JWT não localizado na configuração.");
-
-            builder.Services.AddScoped<IJwtService, JwtService>(_ => new JwtService(key, issuer));
+            
             builder.Services
                 .AddAuthentication(options =>
                 {

@@ -17,6 +17,8 @@ builder.Services.AddSwaggerGen(c =>
     c.EnableAnnotations();
 });
 
+builder.Services.AddHttpContextAccessor();
+
 var app = builder.Build();
 
 app.UseErrorLogging();
@@ -28,7 +30,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapUsuarioEndpoints();
-app.MapContaEndpoints();
+
+app.MapCompraEndpoints();
 
 app.Run();

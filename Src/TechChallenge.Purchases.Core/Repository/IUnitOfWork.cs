@@ -2,7 +2,7 @@
 {
     public interface IUnitOfWork : IDisposable
     {
-        IUsuarioRepository UsuarioRepository { get; }
+        ICompraRepository CompraRepository { get; }
         Task CommitAsync();
     }
 }

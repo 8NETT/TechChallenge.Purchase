@@ -1,0 +1,45 @@
+2025-09-21 14:49:21.199 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 14:49:21.492 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 14:49:21.493 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 14:49:21.494 -03:00 [INF] Hosting environment: Development
+2025-09-21 14:49:21.494 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 14:50:38.890 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/ - null null
+2025-09-21 14:50:38.971 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 14:50:39.111 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/ - 404 0 null 222.0559ms
+2025-09-21 14:50:39.122 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5180/, Response status code: 404
+2025-09-21 14:51:08.478 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/ - null null
+2025-09-21 14:51:08.489 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/ - 404 0 null 12.862ms
+2025-09-21 14:51:08.489 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5180/, Response status code: 404
+2025-09-21 14:51:17.481 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger - null null
+2025-09-21 14:51:17.484 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger - 301 0 null 2.4568ms
+2025-09-21 14:51:17.487 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.html - null null
+2025-09-21 14:51:17.558 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.html - 200 null text/html;charset=utf-8 71.8157ms
+2025-09-21 14:51:17.570 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/swagger-ui.css - null null
+2025-09-21 14:51:17.571 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.css - null null
+2025-09-21 14:51:17.575 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-21 14:51:17.576 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/swagger-ui-bundle.js - null null
+2025-09-21 14:51:17.586 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/index.js - null null
+2025-09-21 14:51:17.588 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.js - 200 null application/javascript;charset=utf-8 2.4588ms
+2025-09-21 14:51:17.594 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/index.css - 200 152 text/css 22.0167ms
+2025-09-21 14:51:17.594 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/swagger-ui.css - 200 23647 text/css 23.2093ms
+2025-09-21 14:51:17.609 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/swagger-ui-bundle.js - 200 417980 text/javascript 33.5046ms
+2025-09-21 14:51:17.609 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/swagger-ui-standalone-preset.js - 200 70860 text/javascript 33.5317ms
+2025-09-21 14:51:17.799 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - null null
+2025-09-21 14:51:17.803 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-21 14:51:17.826 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/swagger/favicon-32x32.png - null null
+2025-09-21 14:51:17.827 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/favicon-32x32.png - 200 628 image/png 1.149ms
+2025-09-21 14:51:17.896 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.3098ms
+2025-09-21 15:01:48.351 -03:00 [INF] User profile is available. Using '/Users/rayanlima/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-21 15:01:48.649 -03:00 [INF] Now listening on: http://localhost:5180
+2025-09-21 15:01:48.650 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 15:01:48.650 -03:00 [INF] Hosting environment: Development
+2025-09-21 15:01:48.650 -03:00 [INF] Content root path: /Users/rayanlima/Developer/TechChallenge/TechChallenge.Purchases/Src/TechChallenge.Purchases.Web
+2025-09-21 15:01:59.654 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5180/ - null null
+2025-09-21 15:01:59.743 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-21 15:01:59.820 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5180/ - 404 0 null 166.7555ms
+2025-09-21 15:01:59.836 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5180/, Response status code: 404
+2025-09-21 15:02:09.448 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5180/api/compra - application/json 229
+2025-09-21 15:02:09.487 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-21 15:02:09.492 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-21 15:02:09.492 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5180/api/compra - 401 0 null 45.7697ms
