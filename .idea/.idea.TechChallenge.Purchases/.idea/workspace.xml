@@ -10,23 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e9cfdff-4e9f-41ff-bcec-1227cdaf5565" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TechChallenge.Purchases/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TechChallenge.Purchases/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Application/Contracts/ICompraService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Application/Contracts/ICompraService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Application/DTOs/CompraDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Application/DTOs/CompraDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Application/Mappers/CompraMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Application/Mappers/CompraMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Application/Record/CompraInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Application/Services/CompraService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Application/Services/CompraService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Builders/CompraBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Builders/CompraBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Entity/Compra.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Entity/Compra.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Entity/EntityBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Entity/EntityBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Repository/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Repository/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Validators/CompraValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Core/Validators/CompraValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Configurations/CompraConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Configurations/CompraConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Messaging/CompraCriadaEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Messaging/CompraCriadaEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Messaging/OrderPlacedEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Messaging/OrderPlacedEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Repository/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Repository/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Repository/EFRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Infrastructure/Repository/EFRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Web/Endpoints/CompraEndpoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Web/Endpoints/CompraEndpoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Web/Logs/log-20250921.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Src/TechChallenge.Purchases.Web/Logs/log-20250921.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +96,7 @@
       <updated>1758410743567</updated>
       <workItem from="1758410745239" duration="55000" />
       <workItem from="1758411005707" duration="101000" />
-      <workItem from="1758469391992" duration="13858000" />
+      <workItem from="1758469391992" duration="17520000" />
     </task>
     <servers />
   </component>
