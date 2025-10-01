@@ -7,18 +7,15 @@ COPY ["Src/TechChallenge.Purchases.Web/TechChallenge.Purchases.Web.csproj", "Src
 COPY ["Src/TechChallenge.Purchases.Core/TechChallenge.Purchases.Core.csproj", "Src/TechChallenge.Purchases.Core/"]
 COPY ["Src/TechChallenge.Purchases.Infrastructure/TechChallenge.Purchases.Infrastructure.csproj", "Src/TechChallenge.Purchases.Infrastructure/"]
 COPY ["Src/TechChallenge.Purchases.Application/TechChallenge.Purchases.Application.csproj", "Src/TechChallenge.Purchases.Application/"]
-# COPY ["tests/WebApiTests/WebApiTests.csproj", "tests/WebApiTests/"]
-# COPY ["tests/CoreTests/CoreTests.csproj", "tests/CoreTests/"]
-# COPY ["tests/ApplicationTests/ApplicationTests.csproj", "tests/ApplicationTests/"]
+COPY ["TechChallenge.Purchases.Tests/TechChallenge.Purchases.Tests.csproj", "TechChallenge.Purchases.Tests/"]
 
 RUN dotnet restore "TechChallenge.Purchases.sln"
 
-# Copy everything else and build
-COPY . ./
+# Copy everything else
+COPY . ./ 
 
-# Run tests and coverage
-# Run all tests defined in the solution file
-# RUN dotnet test "TechChallenge.Purchases.sln" --no-restore --verbosity normal --collect:"XPlat Code Coverage"
+# Run tests
+RUN dotnet test "TechChallenge.Purchases.sln" --no-restore
 
 # Build the application
 RUN dotnet publish "Src/TechChallenge.Purchases.Web/TechChallenge.Purchases.Web.csproj" -c Release -o /app/publish
@@ -50,4 +47,4 @@ ENV ASPNETCORE_URLS=http://+:8081
 # Expose port 8081 so Azure Container Apps ingress can connect
 EXPOSE 8081
 
-ENTRYPOINT ["dotnet", "TechChallenge.Purchases.dll"]
+ENTRYPOINT ["dotnet", "TechChallenge.Purchases.Web.dll"]

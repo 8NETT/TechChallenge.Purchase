@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Purchases.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Purchases.Infrastructure", "Src\TechChallenge.Purchases.Infrastructure\TechChallenge.Purchases.Infrastructure.csproj", "{DD8262FA-DD49-4B9D-94CF-2ED9FE7241A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Purchases.Tests", "TechChallenge.Purchases.Tests\TechChallenge.Purchases.Tests.csproj", "{F7989515-4A40-4D18-BDBA-1746871F159E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{DD8262FA-DD49-4B9D-94CF-2ED9FE7241A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD8262FA-DD49-4B9D-94CF-2ED9FE7241A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD8262FA-DD49-4B9D-94CF-2ED9FE7241A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7989515-4A40-4D18-BDBA-1746871F159E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7989515-4A40-4D18-BDBA-1746871F159E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7989515-4A40-4D18-BDBA-1746871F159E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7989515-4A40-4D18-BDBA-1746871F159E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
