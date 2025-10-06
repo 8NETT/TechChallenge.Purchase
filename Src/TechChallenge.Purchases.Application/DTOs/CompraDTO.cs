@@ -6,7 +6,7 @@ namespace TechChallenge.Purchases.Application.DTOs
     {
         public int Id { get; set; }
         public int UsuarioId { get; set; }
-        public required int JogoId { get; set; }
+        public required Guid JogoId { get; set; }
         public required decimal Valor { get; set; }
         public required int Desconto { get; set; }
         public decimal Total { get; set; }

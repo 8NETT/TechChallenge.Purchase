@@ -18,7 +18,7 @@ namespace TechChallenge.Purchases.Tests.Core.Validators
         private Compra CriarCompraValida() => new Compra
         {
             CreatedAt = DateTime.UtcNow,
-            JogoId = 1,
+            JogoId = Guid.NewGuid(),
             CompradorId = 1,
             Valor = 100,
             Desconto = 10,
@@ -29,7 +29,7 @@ namespace TechChallenge.Purchases.Tests.Core.Validators
         public void DeveTerErro_QuandoJogoIdVazio()
         {
             var model = CriarCompraValida();
-            model.JogoId = 0;
+            model.JogoId = Guid.Empty;
             var result = _validator.TestValidate(model);
             result.ShouldHaveValidationErrorFor(c => c.JogoId);
         }

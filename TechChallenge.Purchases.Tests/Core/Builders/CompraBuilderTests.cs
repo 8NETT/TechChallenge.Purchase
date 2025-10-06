@@ -13,6 +13,7 @@ namespace TechChallenge.Purchases.Tests.Core.Builders
         public void DeveConstruir_QuandoCompraValida()
         {
             // Arrange
+            var jogoId = Guid.NewGuid();
             var builder = Compra.New();
             var data = DateTime.UtcNow;
 
@@ -20,7 +21,7 @@ namespace TechChallenge.Purchases.Tests.Core.Builders
             var compra = builder
                 .Id(1)
                 .CompradorId(123)
-                .JogoId(456)
+                .JogoId(jogoId)
                 .Valor(100.50m)
                 .Desconto(10)
                 .Total(90.45m)
@@ -32,7 +33,7 @@ namespace TechChallenge.Purchases.Tests.Core.Builders
             Assert.NotNull(compra);
             Assert.Equal(1, compra.Id);
             Assert.Equal(123, compra.CompradorId);
-            Assert.Equal(456, compra.JogoId);
+            Assert.Equal(jogoId, compra.JogoId);
             Assert.Equal(100.50m, compra.Valor);
             Assert.Equal(10, compra.Desconto);
             Assert.Equal(90.45m, compra.Total);
@@ -69,9 +70,10 @@ namespace TechChallenge.Purchases.Tests.Core.Builders
         public void DeveRetornarResultadoValido_QuandoEstadoValido()
         {
             // Arrange
+            var jogoId = Guid.NewGuid();
             var builder = Compra.New()
                 .CompradorId(1)
-                .JogoId(1)
+                .JogoId(jogoId)
                 .Valor(10)
                 .Total(10)
                 .CreatedAt(DateTime.UtcNow);

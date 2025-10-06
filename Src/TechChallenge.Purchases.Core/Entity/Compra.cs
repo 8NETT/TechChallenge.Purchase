@@ -6,7 +6,7 @@ namespace TechChallenge.Purchases.Core.Entity
     public class Compra : EntityBase
     {
         public int CompradorId { get; set; }
-        public int JogoId { get; set; }
+        public Guid JogoId { get; set; }
         public decimal Valor { get; set; }
         public int Desconto { get; set; }
         public decimal? Total { get; set; }

@@ -66,7 +66,7 @@ namespace TechChallenge.Purchases.Tests.Application.Services
         {
             return new CompraDTO
             {
-                JogoId = 1,
+                JogoId = Guid.NewGuid(),
                 Valor = 100,
                 Desconto = 10,
                 PaymentMethodType = paymentMethodType,
@@ -140,7 +140,8 @@ namespace TechChallenge.Purchases.Tests.Application.Services
         [Fact]
         public async Task DeveRetornarSucesso_QuandoEstornoDeCompraValida()
         {
-            var compra = Compra.New().CompradorId(123).JogoId(456).Valor(100).Total(100).Build();
+            var jogoId = Guid.NewGuid();
+            var compra = Compra.New().CompradorId(123).JogoId(jogoId).Valor(100).Total(100).Build();
             compra.Id = 1; // Set Id after build for test purposes
             var eventoCapturado = new Capture<CompraEstornadaEvent>();
             _compraRepositoryMock.Setup(r => r.ObterPorIdAsync(1)).ReturnsAsync(compra);
@@ -155,7 +156,7 @@ namespace TechChallenge.Purchases.Tests.Application.Services
             var evt = eventoCapturado.Value;
             Assert.Equal(1, evt.CompraId);
             Assert.Equal(123, evt.UserId);
-            Assert.Equal(456, evt.JogoId);
+            Assert.Equal(jogoId, evt.JogoId);
         }
 
         [Fact]

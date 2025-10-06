@@ -16,7 +16,7 @@ namespace TechChallenge.Purchases.Tests.Application.Mappers
             {
                 Id = 1,
                 CompradorId = 123,
-                JogoId = 456,
+                JogoId = Guid.NewGuid(),
                 Valor = 100.50m,
                 Desconto = 10,
                 Total = 90.45m,
@@ -61,7 +61,7 @@ namespace TechChallenge.Purchases.Tests.Application.Mappers
             {
                 Id = 1,
                 UsuarioId = 123,
-                JogoId = 456,
+                JogoId = Guid.NewGuid(),
                 Valor = 100.50m,
                 Desconto = 10,
                 Total = 90.45m,

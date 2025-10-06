@@ -13,7 +13,7 @@ namespace TechChallenge.Purchases.Core.Builders
 
         public CompraBuilder Id(int id) => this.Tee(b => b._compra.Id = id);
         public CompraBuilder CompradorId(int id) => this.Tee(b => b._compra.CompradorId = id);
-        public CompraBuilder JogoId(int id) => this.Tee(b => b._compra.JogoId = id);
+        public CompraBuilder JogoId(Guid id) => this.Tee(b => b._compra.JogoId = id);
         public CompraBuilder Valor(decimal valor) => this.Tee(b => b._compra.Valor = valor);
         public CompraBuilder Desconto(int desconto) => this.Tee(b => b._compra.Desconto = desconto);
         public CompraBuilder Total(decimal total) => this.Tee(b => b._compra.Total = total);
